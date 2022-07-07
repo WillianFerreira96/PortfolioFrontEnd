@@ -1,0 +1,564 @@
+/*------------------------------Small------------------------------*/
+@media(min-width:576px){
+/*------------------------------Barra de Navegação------------------------------*/
+
+header{    
+    width: 100%;
+    height: 8vh;
+    top: 0;    
+    position: fixed;
+    z-index: 1;
+    display: block;
+    margin: 0;
+}
+
+#icon-menu{
+    display: none;
+}
+
+nav{
+    background-image: linear-gradient(to right,#6a7500 , #cfda00,#5c6600);
+    border-bottom: 5px solid #537656;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.cols-nav{
+    height: 100%;
+    width: 50%;
+}
+            
+#logo{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo p a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.781);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+#logo p a:hover{
+    color: #05fee8;
+}
+
+#list-barra-nav{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;                              
+}    
+
+.itens-list-barra-nav{
+    list-style-type: none;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.itens-list-barra-nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-shadow: 1px 2px 5px black;
+    transition: ease-in-out 0.3s;
+}
+
+                
+.itens-list-barra-nav a:hover{
+    text-decoration: underline;
+    color: #ffd02e;
+}
+
+/*------------------------------Apresentação------------------------------*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+main div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-img-main{
+    height: 100%;
+    width: 50%;
+}
+
+main div img{
+    width: 100%;
+    position: static;
+}
+
+
+#main-text{
+    align-items: stretch;
+    width: 80%;
+    height: 35%;
+    margin-left: 20%;
+    margin-top: 0;
+}
+    
+main div p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 5px;            
+}
+
+main h1{
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+main h1::after{
+    content: '|';
+    animation: piscar .7s infinite;    
+}
+
+@keyframes piscar{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+            
+main h2{
+    margin: 0;
+    font-size: 1.5rem;
+}
+            
+#btns{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    margin-left: 8%;
+    margin-top: 7%;
+    width: 70%;
+    height: 10%;
+}  
+
+#btn-linkedin, #btn-github{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    width: 40%;
+    height: 80%;
+    margin: 5%;
+    border-radius: 7px;  
+    transition: .3s;    
+    position: relative;
+    animation: aparecer 3s normal;       
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        position: relative;
+        top: 30px;
+        margin: 50px;
+    }
+    50%{
+        opacity: .2;
+    }
+    97%,93%,89%{
+        opacity: 1;
+    }
+    99%,95%,91%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+            
+#btn-linkedin{
+    border: 2px solid #b3be00;
+    margin-left: 0px;                
+}
+            
+#btn-github{
+    border: 2px solid #537656;
+}
+
+#btn-linkedin:hover, #btn-github:hover{
+    border: 5px solid #05fee8;
+}
+            
+#btn-linkedin p, #btn-github p{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+            
+#btn-linkedin img, #btn-github img{
+    width: 15%;
+}
+
+.anc-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#scrollAviso{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 50%;
+    bottom: 2%; 
+    transform: translateX(50%);   
+}
+
+#scrollAviso img{
+    width: 20px;
+    transform: translateY(0);
+    animation: scrollDown 1.7s infinite;
+    margin-left: 10px;
+}
+
+@keyframes scrollDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes scrollAnimacaoRight{
+    0%{
+        transform: translate(-60px , -30px);
+        opacity: 0;
+    }
+}
+
+@keyframes scrollAnimacaoLeft{
+    0%{
+        transform: translate(60px , 30px);
+        opacity: 0;
+    }
+}
+
+/*------------------------------Sobre Mim------------------------------*/
+
+#sobre-mim{
+    margin: 0;
+    padding: 0;
+    height: 70vh;
+    margin: 0 auto;
+    background-color: #8a8a8a38;
+}
+
+#sobreMim-box-text{
+    width: 70%;
+    height: 70%;
+    padding: 5% 0 0 5%;
+    margin: 0 auto;
+}
+    
+#sobreMim-box-text h2{
+    font-size: 3rem;
+    margin-top: 0;
+    /*animation: scrollAnimacaoRight 3s normal;*/
+}
+        
+#sobreMim-box-text p{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 2em;
+    text-align: justify;
+    /*animation: scrollAnimacaoLeft 3s normal;*/
+}
+        
+#bnt-download{
+    width: 15%;
+    height: 10%;
+    margin: 0 auto 0;
+    border-radius: 7px;
+    display: flex;
+    border: 2px solid #b3be00;
+    position: relative;
+    transition: .3s;
+    z-index: 0;
+}
+    
+#bnt-download:hover{
+    border: 5px solid #05fee8;
+}
+
+#bnt-download a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#bnt-download p{
+    font-size: 140%;
+    margin: 6% 0 0 5%;
+}
+
+#bnt-download img{
+    width: 20%;
+    height: 90%;
+    margin-left: 10%;
+}
+    
+/*------------------------------Projetos------------------------------*/
+
+section#projetos{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section#projetos h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 3.5% 0;
+}
+
+#projetos-container{
+    padding-bottom: 3%;
+    width: 100%;
+    height: 80%;
+}
+
+.row-projetos{                
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;    
+    flex-direction: row;
+}    
+
+#moreRow{
+    display: none;
+}
+
+.projetos-itens{                
+    margin: 0;
+    padding: 0;
+    width: 45%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.projetos-itens figure{                   
+    margin: 2% auto;
+}
+
+.projetos-itens img{
+    border: 2px solid #05fee8;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    transition: .5s;
+}
+                        
+.projetos-itens img:hover{
+    width: 99%;
+    border: 2px solid #b3be00;
+    
+}    
+
+.projetos-text{
+    width: 90%; 
+    height: 30%; 
+    margin: 0 auto;
+}   
+                        
+.projetos-text h3{
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    color: #537656cc;
+}
+
+.projetos-text p{
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.projetos-text h4{
+    margin: 0;
+    color: #b4be009a;
+    font-size: .8rem;
+}
+
+#btn_ver_menos{
+    display: none;
+}
+
+#btn_ver_menos, #btn_ver_mais{
+    border: 3px solid #ffd02e;
+    border-radius: 5px;
+    font-size: 1.15rem; 
+    width: 15%; 
+    height: 5%; 
+    margin: 0 auto;
+    text-align: center;
+    transition: .3s;
+} 
+
+#btn_ver_menos:hover{
+    border: 5px solid #05fee8;
+    cursor: pointer;
+}
+            
+#btn_ver_menos p,#btn_ver_mais p{
+    margin: 8%;
+}
+
+#btn_ver_mais:hover{
+    border: 5px solid #05fee8;
+    cursor: pointer;
+}
+
+
+/*------------------------------Habilidades------------------------------*/
+#habilidades{
+    background-color: #8a8a8a38;
+    margin: 0;
+    padding: 0;
+    height: 125vh;   
+    display: flex;   
+    flex-direction: column;
+}
+
+#habilidades h2,#habilidades_em_andamento h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 3%;
+}
+
+.row-habilidades{
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+}
+
+
+.cols-habilidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 40vh;
+    width: 50%;
+    margin: 3.5% 0 0;
+}  
+
+.cols-habilidades figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+.img_habilidades{
+    height: 40%;
+    transition: 1s;
+}
+
+.img_habilidades:hover{
+    height: 55%;
+}
+
+.cols-habilidades figure h3{
+    color: #b4be009a;
+}
+
+.cols-habilidades figure ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.671)
+}
+.cols-habilidades figure ul p{
+    margin: 0;
+    text-align: left;
+    font-size: small;
+}
+
+/*------------------------------habilidades em andamento------------------------------*/
+
+#habilidades_em_andamento{
+    background-color: #000000;
+    height: 70vh;
+}
+
+.row-habilidades-em-andamento{
+    height: 20vh;
+}
+
+.cols-habilidades-em-andamento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 35vh;
+        margin: 3.5% 0 0;
+} 
+.cols-habilidades-em-andamento figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        margin: 0;    
+}
+
+.cols-habilidades-em-andamento figure h3{
+    color: #b4be009a;
+}
+         
+/*------------------------------Footer------------------------------*/           
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #8a8a8a38;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    margin: 2.5% 0 ;
+}
+
+}

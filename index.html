@@ -6,12 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image" href="assets/img/zero_Icon.webp">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/xs.css">
+    <link rel="stylesheet" href="assets/css/sm.css">
     <title>Meu Curriculo | Willian Ferreira</title>
 </head>
-<body onload="EfeitoDigitacao(), scrollAnimacao()" >    
+<body onload="EfeitoDigitacao()">    
     <div id="container">
-        <header>
+        <header>        
+            <img id="icon-menu" src="assets/img/barra icon sm.png">
             <nav>
                 <div class="cols-nav">
                     <div id="logo">
@@ -43,15 +46,15 @@
                         <p>Linkedin</p>
                     </div>
                     <div id="btn-github">
-                        <a class="anc-btn" target="_blank" href="https://github.com/WillianFerreira96"></a>
+                        <a class="anc-btn" target="_blank" href="https://github.com/"></a>
                         <img src="assets/img/github.png">
                         <p>Github</p>                        
                     </div>
                 </div>               
             </div>
-            <div>
+            <div id="div-img-main">
                 <figure>
-                    <img src="/assets/img/Zero.jpg" alt="Zero" >
+                    <img src="/assets/img/zero.jpg" alt="Zero" >
                 </figure>
             </div>
         </main>
@@ -88,7 +91,7 @@
                     <div class="projetos-itens">
                         <figure>
                             <a target="_blank" href="">
-                                <img class="projetos_img"src="assets/img/Peregrino_complet.webp" alt="Meu Projeto" >                        
+                                <img class="projetos_img"src="assets/img/peregrino_complet.webp" alt="Meu Projeto" >                        
                             </a>
                         </figure>
                         <div class="projetos-text">
@@ -100,7 +103,7 @@
                     <div class="projetos-itens">
                         <figure>
                             <a target="_blank" href="">
-                                <img class="projetos_img"src="assets/img/Peregrino_complet.webp" alt="Meu Projeto" >                        
+                                <img class="projetos_img"src="assets/img/peregrino_complet.webp" alt="Meu Projeto" >                        
                             </a>
                         </figure>
                         <div class="projetos-text">
@@ -114,7 +117,7 @@
                     <div class="projetos-itens">
                         <figure>
                             <a target="_blank" href="">
-                                <img class="projetos_img"src="assets/img/Peregrino_complet.webp" alt="Meu Projeto" >                        
+                                <img class="projetos_img"src="assets/img/peregrino_complet.webp" alt="Meu Projeto" >                        
                             </a>
                         </figure>
                         <div class="projetos-text">
@@ -126,7 +129,7 @@
                     <div class="projetos-itens">
                         <figure>
                             <a target="_blank" href="">
-                                <img class="projetos_img"src="assets/img/Peregrino_complet.webp" alt="Meu Projeto" >                        
+                                <img class="projetos_img"src="assets/img/peregrino_complet.webp" alt="Meu Projeto" >                        
                             </a>
                         </figure>
                         <div class="projetos-text">
@@ -147,271 +150,284 @@
         <section id="habilidades">
             <h2>Habilidades</h2>
             <div id="habilidades-container">
-                <div class="row-habilidades">
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/html.png" alt="HTML">
-                        <figcaption>
-                            <h3>HTML</h3>
-                            <ul>
-                                <li>
-                                    <p>HTML semântico</p>
-                                </li>
-                                <li>
-                                    <p>Tags e Meta Tags</p>
-                                </li>
-                                <li>
-                                    <p>Formulários</p>
-                                </li>
-                                <li>
-                                    <p>e etc.</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/css.png" alt="CSS">
-                        <figcaption>
-                            <h3>CSS</h3>
-                            <ul>
-                                <li>
-                                    <p>Sintaxe CSS</p>
-                                </li>
-                                <li>
-                                    <p>Atributos</p>
-                                </li>
-                                <li>
-                                    <p>Conceito Mobile First</p>
-                                </li>
-                                <li>
-                                    <p>e etc.</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/javascript.png" alt="JavaScript">
-                        <figcaption>
-                            <h3>JavaScript</h3>
-                            <ul>
-                                <li>
-                                    <p>Sintaxe JS</p>
-                                </li>
-                                <li>
-                                    <p>Variáveis</p>
-                                </li>
-                                <li>
-                                    <p>Árvore DOM</p>
-                                </li>
-                                <li>
-                                    <p>Tratamento de dados</p>
-                                </li>
-                                <li>
-                                    <p>Condições e Repetições</p>
-                                </li>
-                                <li>
-                                    <p>Arrays</p>
-                                </li>
-                                <li>
-                                    <p>Funções</p>
-                                </li>
-                                <li>
-                                    <p>e etc.</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/Python.png" alt="Python">
-                        <figcaption>
-                            <h3>Python</h3>
-                            <ul>
-                                <li>                                    
-                                    <p>Operadores</p>
-                                </li>
-                                <li>                                    
-                                    <p>Saida e Entrada de dados</p>
-                                </li>
-                                <li>                                   
-                                    <p> Processamento de dados e Casting</p>
-                                </li>
-                                <li>                                    
-                                    <p>Debugger</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Sequencial</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Condicional</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura de Repetições</p>
-                                </li>
-                                <li>                                    
-                                    <p>Vetores e Matrizes</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
+                <div class="row-habilidades">                
+                    <div class="cols-habilidades">
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/html.png" alt="HTML">
+                            <figcaption>
+                                <h3>HTML</h3>
+                                <ul>
+                                    <li>
+                                        <p>HTML semântico</p>
+                                    </li>
+                                    <li>
+                                        <p>Tags e Meta Tags</p>
+                                    </li>
+                                    <li>
+                                        <p>Formulários</p>
+                                    </li>
+                                    <li>
+                                        <p>e etc.</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/css.png" alt="CSS">
+                            <figcaption>
+                                <h3>CSS</h3>
+                                <ul>
+                                    <li>
+                                        <p>Sintaxe CSS</p>
+                                    </li>
+                                    <li>
+                                        <p>Atributos</p>
+                                    </li>
+                                    <li>
+                                        <p>Conceito Mobile First</p>
+                                    </li>
+                                    <li>
+                                        <p>e etc.</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="cols-habilidades">                        
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/javascript.png" alt="JavaScript">
+                            <figcaption>
+                                <h3>JavaScript</h3>
+                                <ul>
+                                    <li>
+                                        <p>Sintaxe JS</p>
+                                    </li>
+                                    <li>
+                                        <p>Variáveis</p>
+                                    </li>
+                                    <li>
+                                        <p>Árvore DOM</p>
+                                    </li>
+                                    <li>
+                                        <p>Tratamento de dados</p>
+                                    </li>
+                                    <li>
+                                        <p>Condições e Repetições</p>
+                                    </li>
+                                    <li>
+                                        <p>Arrays</p>
+                                    </li>
+                                    <li>
+                                        <p>Funções</p>
+                                    </li>
+                                    <li>
+                                        <p>e etc.</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/Python.png" alt="Python">
+                            <figcaption>
+                                <h3>Python</h3>
+                                <ul>
+                                    <li>                                    
+                                        <p>Operadores</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Saida e Entrada de dados</p>
+                                    </li>
+                                    <li>                                   
+                                        <p> Processamento de dados e Casting</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Debugger</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Sequencial</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Condicional</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura de Repetições</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Vetores e Matrizes</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>
                 </div>
-                <div class="row-habilidades"> 
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/C.png" alt="C">
-                        <figcaption>
-                            <h3>C Language</h3>
-                            <ul>
-                                <li>                                    
-                                    <p>Operadores</p>
-                                </li>
-                                <li>                                    
-                                    <p>Saida e Entrada de dados</p>
-                                </li>
-                                <li>                                   
-                                    <p> Processamento de dados e Casting</p>
-                                </li>
-                                <li>                                    
-                                    <p>Debugger</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Sequencial</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Condicional</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura de Repetições</p>
-                                </li>
-                                <li>                                    
-                                    <p>Vetores e Matrizes</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-  
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/C++.png" alt="C++">
-                        <figcaption>
-                            <h3>C++ Language</h3>
-                            <ul>
-                                <li>                                    
-                                    <p>Operadores</p>
-                                </li>
-                                <li>                                    
-                                    <p>Saida e Entrada de dados</p>
-                                </li>
-                                <li>                                   
-                                    <p> Processamento de dados e Casting</p>
-                                </li>
-                                <li>                                    
-                                    <p>Debugger</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Sequencial</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Condicional</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura de Repetições</p>
-                                </li>
-                                <li>                                    
-                                    <p>Vetores e Matrizes</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/C++++.png" alt="C#">
-                        <figcaption>
-                            <h3>C# Language</h3>
-                            <ul>
-                                <li>                                    
-                                    <p>Operadores</p>
-                                </li>
-                                <li>                                    
-                                    <p>Saida e Entrada de dados</p>
-                                </li>
-                                <li>                                   
-                                    <p> Processamento de dados e Casting</p>
-                                </li>
-                                <li>                                    
-                                    <p>Debugger</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Sequencial</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Condicional</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura de Repetições</p>
-                                </li>
-                                <li>                                    
-                                    <p>Vetores e Matrizes</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/Java.png" alt="Java">
-                        <figcaption>
-                            <h3>Java</h3>
-                            <ul>
-                                <li>                                    
-                                    <p>Operadores</p>
-                                </li>
-                                <li>                                    
-                                    <p>Saida e Entrada de dados</p>
-                                </li>
-                                <li>                                   
-                                    <p> Processamento de dados e Casting</p>
-                                </li>
-                                <li>                                    
-                                    <p>Debugger</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Sequencial</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura Condicional</p>
-                                </li>
-                                <li>                                    
-                                    <p>Estrutura de Repetições</p>
-                                </li>
-                                <li>                                    
-                                    <p>Vetores e Matrizes</p>
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>                    
-                </div>
+                <div class="row-habilidades">     
+                    <div class="cols-habilidades"> 
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/c1.png" alt="C">
+                            <figcaption>
+                                <h3>C Language</h3>
+                                <ul>
+                                    <li>                                    
+                                        <p>Operadores</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Saida e Entrada de dados</p>
+                                    </li>
+                                    <li>                                   
+                                        <p> Processamento de dados e Casting</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Debugger</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Sequencial</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Condicional</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura de Repetições</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Vetores e Matrizes</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>  
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/c2.png" alt="C++">
+                            <figcaption>
+                                <h3>C++ Language</h3>
+                                <ul>
+                                    <li>                                    
+                                        <p>Operadores</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Saida e Entrada de dados</p>
+                                    </li>
+                                    <li>                                   
+                                        <p> Processamento de dados e Casting</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Debugger</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Sequencial</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Condicional</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura de Repetições</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Vetores e Matrizes</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                    </div>    
+                    <div class="cols-habilidades">                    
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/c3.png" alt="C#">
+                            <figcaption>
+                                <h3>C# Language</h3>
+                                <ul>
+                                    <li>                                    
+                                        <p>Operadores</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Saida e Entrada de dados</p>
+                                    </li>
+                                    <li>                                   
+                                        <p> Processamento de dados e Casting</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Debugger</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Sequencial</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Condicional</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura de Repetições</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Vetores e Matrizes</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/Java.png" alt="Java">
+                            <figcaption>
+                                <h3>Java</h3>
+                                <ul>
+                                    <li>                                    
+                                        <p>Operadores</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Saida e Entrada de dados</p>
+                                    </li>
+                                    <li>                                   
+                                        <p> Processamento de dados e Casting</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Debugger</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Sequencial</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura Condicional</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Estrutura de Repetições</p>
+                                    </li>
+                                    <li>                                    
+                                        <p>Vetores e Matrizes</p>
+                                    </li>
+                                </ul>
+                            </figcaption>
+                        </figure>                    
+                    </div>
+                </div>    
             </div>     
         </section>
         <section id="habilidades_em_andamento">
             <h2>Proximas Habilidades</h2>
             <div id="habilidades-container">                
                 <div class="row-habilidades-em-andamento">                     
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/bootstrap.png" alt="Bootstrap">
-                        <figcaption>
-                            <h3>Bootstrap</h3>
-                        </figcaption>
-                        <p>Em andamento...</p>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/mysql.png" alt="mysql">
-                        <figcaption>
-                            <h3>MySQL</h3>                            
-                        </figcaption>
-                        <p>Em andamento...</p>
-                    </figure>
-                    <figure>
-                        <img class="img_habilidades" src="assets/img/Java.png" alt="Java">
-                        <figcaption>
-                            <h3>Java Orientada a Objeto</h3>                            
-                        </figcaption>
-                        <p>Em andamento...</p>
-                    </figure>                    
+                    <div class="cols-habilidades-em-andamento">                     
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/bootstrap.png" alt="Bootstrap">
+                            <figcaption>
+                                <h3>Bootstrap</h3>
+                            </figcaption>
+                            <p>Em andamento...</p>
+                        </figure>
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/mysql.png" alt="mysql">
+                            <figcaption>
+                                <h3>MySQL</h3>                            
+                            </figcaption>
+                            <p>Em andamento...</p>
+                        </figure>
+                    </div>
                 </div>
+                <div class="row-habilidades-em-andamento">     
+                    <div class="cols-habilidades-em-andamento">        
+                        <figure>
+                            <img class="img_habilidades" src="assets/img/Java.png" alt="Java">
+                            <figcaption>
+                                <h3>Java Orientada a Objeto</h3>                            
+                            </figcaption>
+                            <p>Em andamento...</p>
+                        </figure>                    
+                    </div>
+                </div>    
             </div>     
         </section>
         <footer>

@@ -1,0 +1,511 @@
+/*------------------------------Extra Small------------------------------*/
+header{    
+    width: 13%;
+    height: 8vh;
+    top: 0;
+    right: 0;  
+    margin: 5% 5% 0 0;  
+    position: fixed;
+    z-index: 2;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,#6a7500 , #cfda00,#5c6600);
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#icon-menu{
+    width: 45px;
+    height: 40px;
+}
+
+nav{    
+    height: 100%;
+    width: 100%;
+    display: none;
+}
+
+.cols-nav{
+    height: 100%;
+    width: 50%;
+}
+            
+#logo{
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo p a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color:rgba(255, 255, 255, 0.781);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+
+#list-barra-nav{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;                              
+}    
+
+.itens-list-barra-nav{
+    list-style-type: none;
+    margin-right: 10%;
+    cursor: pointer;
+}
+
+.itens-list-barra-nav a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: 1.05rem;
+    font-weight: bold;
+    text-shadow: 1px 2px 5px black;
+    transition: ease-in-out 0.3s;
+}
+
+
+/*------------------------------Apresentação------------------------------*/
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+main div{
+    /*border: rgb(255, 0, 0) solid 2px;*/
+    width: 98%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#div-img-main{
+    height: 10%;
+}
+
+main div img{
+    width: 150px;
+    position: relative;
+    top: 90px;
+    right: -50px;
+}
+
+#main-text{
+    align-items: stretch;
+    width: 80%;
+    height: 60%;
+    margin-top: 0;
+}
+    
+main div p{
+    color: #fff;
+    font-size: 1.3rem;
+    margin: 5px;            
+}
+
+main h1{
+    font-size: 3.5rem;
+    margin: 20px 0;
+}
+
+main h1::after{
+    content: '|';
+    animation: piscar .7s infinite;    
+}
+
+@keyframes piscar{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+            
+main h2{
+    margin: 0;
+    font-size: 1.2rem;
+}
+            
+#btns{
+    display: flex;
+    flex-direction: row;    
+    margin: 7% 0 0 7%;
+    
+    width: 100%;
+    height: 10%;
+}  
+
+#btn-linkedin, #btn-github{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 40%;
+    height: 80%;
+    margin: 5%;
+    border-radius: 7px;  
+    transition: .3s;    
+    position: relative;
+    animation: aparecer 3s normal;       
+}
+
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+        position: relative;
+        top: 10px;
+        margin: 15px;
+    }
+    50%{
+        opacity: .2;
+    }
+    97%,93%,89%{
+        opacity: 1;
+    }
+    99%,95%,91%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        position: relative;
+        top: 0;
+    }
+}
+            
+#btn-linkedin{
+    border: 2px solid #b3be00;
+    margin-left: 0px;                
+}
+            
+#btn-github{
+    border: 2px solid #537656;
+}
+            
+#btn-linkedin p, #btn-github p{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+            
+#btn-linkedin img, #btn-github img{
+    width: 15%;
+    position: static;
+}
+
+.anc-btn{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#scrollAviso{
+    display: none;
+}
+
+@keyframes scrollDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(5px);
+    }
+}
+
+@keyframes scrollAnimacaoRight{
+    0%{
+        transform: translate(-60px , -30px);
+        opacity: 0;
+    }
+}
+
+@keyframes scrollAnimacaoLeft{
+    0%{
+        transform: translate(60px , 30px);
+        opacity: 0;
+    }
+}
+
+/*------------------------------Sobre Mim------------------------------*/
+
+#sobre-mim{
+    margin: 0;
+    padding: 10% 0 0;
+    height: 135vh;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #8a8a8a38;
+}
+
+#sobreMim-box-text{
+
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+}
+    
+#sobreMim-box-text h2{
+    font-size: 2.7rem;
+    margin-top: 0;
+}
+        
+#sobreMim-box-text p{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-indent: 2em;
+    text-align: justify;
+}
+        
+#bnt-download{
+    width: 50%;
+    height: 5%;
+    margin: 10% auto 0;
+    border-radius: 7px;
+    display: flex;
+    border: 2px solid #b3be00;
+    position: relative;
+    transition: .3s;
+    z-index: 0;
+}
+    
+#bnt-download:hover{
+    border: 5px solid #05fee8;
+}
+
+#bnt-download a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#bnt-download p{
+    font-size: 140%;
+    margin: 6% 0 0 5%;
+}
+
+#bnt-download img{
+    width: 20%;
+    height: 90%;
+    margin-left: 10%;
+}
+    
+/*------------------------------Projetos------------------------------*/
+
+section#projetos{
+    margin: 0;
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section#projetos h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 5%;
+}
+
+#projetos-container{
+    padding-bottom: 3%;
+    width: 100%;
+}
+
+.row-projetos{                
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 130vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}    
+
+#moreRow{
+    display: none;
+}
+
+.projetos-itens{  
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 7%;
+    border-radius: 10px;
+}
+
+.projetos-itens figure{                   
+    margin: 2% auto;
+}
+
+.projetos-itens img{
+    border: 2px solid #05fee8;
+    border-radius: 5px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    transition: .5s;
+} 
+
+.projetos-text{
+    width: 90%; 
+    height: 30%; 
+    margin: 0 auto;
+}   
+                        
+.projetos-text h3{
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 2%;
+    color: #537656cc;
+}
+
+.projetos-text p{
+    margin: 0;
+    margin-bottom: 2%;
+}
+
+.projetos-text h4{
+    margin: 0;
+    color: #b4be009a;
+    font-size: .8rem;
+}
+
+#btn_ver_menos{
+    display: none;
+}
+
+#btn_ver_menos, #btn_ver_mais{
+    border: 3px solid #ffd02e;
+    border-radius: 5px;
+    font-size: 1.15rem; 
+    width: 45%; 
+    height: 5%; 
+    margin: 0 auto;
+    text-align: center;
+    transition: .3s;
+} 
+            
+#btn_ver_menos p , #btn_ver_mais p{
+    margin: 8%;
+}
+
+/*------------------------------Habilidades------------------------------*/
+#habilidades{
+    background-color: #8a8a8a38;
+    margin: 0;
+    padding: 0;
+    height: 320vh;     
+}
+
+#habilidades h2,#habilidades_em_andamento h2{
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 3%;
+}
+
+.row-habilidades{
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+}
+
+.cols-habilidades{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 70vh;
+    margin: 3.5% 0 0;
+}  
+
+.cols-habilidades figure{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    margin: 0;
+}
+
+.img_habilidades{
+    height: 35%;
+    transition: 1s;
+}
+
+.cols-habilidades figure h3{
+    color: #b4be009a;    
+}
+
+.cols-habilidades figure ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.671);
+}
+.cols-habilidades figure ul p{
+    margin: 0;
+    text-align: left;
+    font-size: small;
+}
+
+/*------------------------------habilidades em andamento------------------------------*/
+
+#habilidades_em_andamento{
+    background-color: #000000;
+    height: 80vh;
+}
+
+#habilidades_em_andamento h2{
+    font-size: 1.7rem;
+}
+
+.cols-habilidades-em-andamento{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 35vh;
+        margin: 3.5% 0 0;
+} 
+.cols-habilidades-em-andamento figure{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        text-align: center;
+        height: 100%;
+        margin: 0;    
+}
+
+.cols-habilidades-em-andamento figure h3{
+    color: #b4be009a;
+}
+         
+/*------------------------------Footer------------------------------*/           
+
+footer{
+    height: 10vh;
+    width: 100%;
+    background-color: #8a8a8a38;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    margin: 2.5% 0 ;
+}
